@@ -7,6 +7,7 @@ import Login from "./features/auth/Login";
 import TodoPage from "./features/todo/TodoPage";
 import NotepadPage from "./features/notepad/NotepadPage";
 import ProtectedRoute from "./components/ProtectedRoute";
+import About from "./pages/About"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route
